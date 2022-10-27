@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;528;700&display=swap");
+:root {
+  /*Primary*/
+  --cyan-dark: hsl(185, 75%, 39%);
+  --dark-blue-desaturated: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  /*Neutral*/
+  --gray-dark: hsl(0, 0%, 59%);
+  /* Font size for name and stats */
+  --font-size: 1.125rem;
+  /* Font Family and Weight */
+  --family: "Kumbh Sans", sans-serif;
+  --w-400: 400;
+  --w-700: 700;
+}
+
+body {
+  background-color: var(--cyan-dark);
+  font-family: var(--family);
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 18.75rem;
+  background: white;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid transparent inset;
+}
+
+.card__background img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+
+.card__background {
+  overflow: hidden;
+}
+
+.card__user {
+  position: relative;
+  top: -3.4375rem;
+}
+
+.card__user img {
+  border-radius: 50%;
+  border: 5px solid white;
+  outline: none;
+}
+
+.user__information > .user__name {
+  font-weight: var(--w-700);
+  font-size: 1.125rem;
+  margin-top: -2.5rem;
+  color: var(--dark-blue-desaturated);
+}
+.user__information > .user__name .user__age {
+  font-weight: var(--w-400);
+  color: var(--gray-dark);
+}
+
+.user__location {
+  font-weight: var(--w-400);
+  color: var(--gray-dark);
+  font-size: 0.875rem;
+  position: relative;
+  top: -0.675rem;
+  line-height: 1;
+}
+
+.card__social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.card__followers, .card__likes, .card__photos {
+  min-width: 6rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--w-700);
+  color: var(--dark-blue-desaturated);
+}
+
+.card__followers > span, .card__likes > span, .card__photos > span {
+  color: var(--gray-dark);
+  font-size: 0.75rem;
+  font-weight: var(--w-400);
+  margin-top: -0.8125rem;
+}
+
+/*# sourceMappingURL=app.css.map */
